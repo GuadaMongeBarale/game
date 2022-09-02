@@ -151,9 +151,9 @@ function showTime() {
 function setCanvasSize() {
     canvasSize = window.innerHeight > window.innerWidth
         ?
-        (window.innerWidth * 0.7)
+        (window.innerWidth * 0.6)
         :
-        (window.innerHeight * 0.7)
+        (window.innerHeight * 0.6)
     
     canvasSize = toNum(canvasSize);
 

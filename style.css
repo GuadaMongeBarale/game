@@ -24,6 +24,15 @@ canvas {
     padding-bottom: 5px;
 }
 
+.btns-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    width: 100px;
+    height: 170px;
+}
+
 .btns {
     display: flex;
     justify-content: center;
@@ -65,6 +74,12 @@ button {
     font-family: inherit;
     font-size: 30px;
     font-weight: bold;
+}
+
+.restart input{
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
 }
 
 
@@ -133,11 +148,21 @@ p {
 }
 
 @media(max-width:600px) {
+    .btns-container{
+        gap: 10px;
+        height: 150px;
+    }
+    button {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+    .restart input{
+        font-size: 40px;
+    }
     .info {
         flex-direction: column;
-        
     }
-
     .win-container input {
         width: 190px;
         height: 50px;
