@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GameJS</title>
+</head>
+<body>
+    <section class="win-container inactive">
+
+      <h2> ¡Felicidades! Terminaste el juego</h2>
+
+      <span>🏆</span>
+
+      <p class="newrecord"></p>
+
+      <a href="/index.html"><input type="button" value="Volver a Jugar"></a>
+
+    </section>
+
+    <section class="game-container">
+      <canvas></canvas>
+
+      <div class="btns">
+        <button id="up">🔺 </button>
+        <div>
+          <button id="left">🔺 </button>
+          <button id="right">🔺</button>
+        </div>
+        <button id="down">🔺</button>
+      </div>
+
+      <div class="info">
+        <p>Vidas: <span id="lives"></span> </p>
+        <p> Tiempo: <span id="time"></span> seg.</p>
+        <p> Record: <span id="record"></span> seg. </p>
+      </div>
+    </section>
+    <script type="module" src="./js/game.js"></script>
+</body>
+</html>
